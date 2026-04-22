@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,height=8cm,
+ybar,
+bar width=12pt,
+xlabel={Number of Nodes},
+ylabel={Jitter},
+grid=major]
+\addplot coordinates {
+(50,0.0034)
+(75,0.0029)
+(100,0.0055)
+(125,0.0079)
+(150,0.0080)
+(175,0.0080)
+(200,0.0086)
+};
+\end{axis}
+\end{tikzpicture}
+\end{document}

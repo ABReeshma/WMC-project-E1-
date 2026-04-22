@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,height=8cm,
+xlabel={Number of Nodes},
+ylabel={Throughput},
+grid=major,
+legend pos=north east]
+\addplot+[mark=*] coordinates {(50,13.5)(75,14.5)(100,9.2)(125,4.3)(150,4)(175,4)(200,2.8)};
+\addplot+[mark=square*] coordinates {(50,11)(75,12)(100,8)(125,3.5)(150,3)(175,2.8)(200,2)};
+\addplot+[mark=triangle*] coordinates {(50,12)(75,13)(100,8.5)(125,3.8)(150,3.3)(175,3)(200,2.2)};
+\legend{TAEFTR,AODV,LEACH}
+\end{axis}
+\end{tikzpicture}
+\end{document}
