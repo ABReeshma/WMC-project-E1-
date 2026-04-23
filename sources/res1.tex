@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,height=8cm,
+xlabel={Number of Nodes},
+ylabel={PDR \%},
+grid=major,
+legend pos=south west]
+\addplot+[mark=*] coordinates {(50,66)(75,71)(100,45)(125,21)(150,20)(175,20)(200,14)};
+\addplot+[mark=square*] coordinates {(50,60)(75,64)(100,39)(125,18)(150,16)(175,15)(200,10)};
+\addplot+[mark=triangle*] coordinates {(50,62)(75,66)(100,41)(125,19)(150,18)(175,17)(200,12)};
+\legend{TAEFTR,AODV,LEACH}
+\end{axis}
+\end{tikzpicture}
+\end{document}

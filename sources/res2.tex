@@ -1,0 +1,18 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,height=8cm,
+xlabel={Number of Nodes},
+ylabel={Delay},
+grid=major,
+legend pos=north west]
+\addplot+[mark=*] coordinates {(50,0.0068)(75,0.0058)(100,0.011)(125,0.0158)(150,0.016)(175,0.016)(200,0.0172)};
+\addplot+[mark=square*] coordinates {(50,0.008)(75,0.007)(100,0.013)(125,0.018)(150,0.019)(175,0.020)(200,0.021)};
+\addplot+[mark=triangle*] coordinates {(50,0.0075)(75,0.0068)(100,0.012)(125,0.017)(150,0.018)(175,0.0185)(200,0.019)};
+\legend{TAEFTR,AODV,LEACH}
+\end{axis}
+\end{tikzpicture}
+\end{document}

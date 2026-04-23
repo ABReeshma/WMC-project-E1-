@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,height=8cm,
+xlabel={Packets},
+ylabel={PDR \%},
+grid=major]
+\addplot+[smooth,mark=*,thick] coordinates {
+(50,58)(100,52)(150,43)(200,36)
+};
+\end{axis}
+\end{tikzpicture}
+\end{document}
