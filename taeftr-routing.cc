@@ -35,8 +35,8 @@ void SendPacket(Ptr<Socket> socket)
 int main(int argc, char *argv[])
 {
     // ---------------- PARAMETERS ----------------
-    uint32_t nNodes = 50;       //   (50,75,100,125,150,175,200)
-    uint32_t nPackets = 50;    // (50,100,150,200)
+    uint32_t nNodes = 50;      
+    uint32_t nPackets = 50;    
     double simTime = 40.0;
 
     NodeContainer nodes;
