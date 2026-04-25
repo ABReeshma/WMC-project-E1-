@@ -126,7 +126,7 @@ int main(int argc, char *argv[])
 
     // ---------------- SIMULATION ----------------
 
-    AnimationInterface anim("taeftr.xml");
+    AnimationInterface anim("taeftr1.xml");
     anim.EnablePacketMetadata(true);
     Simulator::Stop(Seconds(simTime));
     Simulator::Run();
